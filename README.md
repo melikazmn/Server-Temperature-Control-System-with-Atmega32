@@ -60,11 +60,11 @@ The master and slave units communicate via USART, exchanging commands and data:
 
 ## Motor Control Based on Temperature
 |Temperature|	Motor 1	|Motor 2|	Motor 3|	Overall Duty Cycle	|System Status|
------------------------------------------------------------------------------
-|30°C|	|30%|	|30%|	|30%|	|90%|	|Green|
-|30°C (1 motor failure)|	||45%|	|45%|	|Failed|	|90%|	|Yellow|
-|30°C (2 motor failures)||90%|	|Failed|	|Failed|	|90%|	|Yellow|
-|50°C|	|50%|	|50%|	|50%|	|150%|	|Green|
-|50°C (1 motor failure)|	|100%|	|Failed|	|Failed|	|Error|	|Red|
+|-----------|---------|-------|--------|----------------------|-------------|
+|30°C|30%|30%|30%|90%|Green|
+|30°C (1 motor failure)|45%|45%|Failed|90%|Yellow|
+|30°C (2 motor failures)|90%|Failed|Failed|90%|Yellow|
+|50°C|50%|50%|50%|150%|Green|
+|50°C (1 motor failure)|100%|Failed|Failed|Error|Red|
 
 
